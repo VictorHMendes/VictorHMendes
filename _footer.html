@@ -1,0 +1,10 @@
+<footer class="site-footer">
+    <div class="wrapper">
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+        <div class="social-links">
+            {% if site.instagram_url %}<a href="{{ site.instagram_url }}" target="_blank">Instagram</a>{% endif %}
+            {% if site.etsy_url %}<a href="{{ site.etsy_url }}" target="_blank">Etsy Shop</a>{% endif %}
+            <a href="mailto:{{ site.email }}">Email</a>
+        </div>
+    </div>
+</footer>
