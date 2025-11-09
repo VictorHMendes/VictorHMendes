@@ -1,21 +1,45 @@
+/* Custom Fonts */
+@font-face {
+    font-family: 'AbrilFatface-Regular'; /* Choose a unique name for your font */
+    src: url('{{ '/assets/fonts/AbrilFatface-Regular.woff2' | relative_url }}') format('woff2'),
+         url('{{ '/assets/fonts/AbrilFatface-Regular.woff' | relative_url }}') format('woff'); /* Fallback for older browsers */
+    font-weight: 400; /* Adjust according to your font file */
+    font-style: normal;
+    font-display: swap; /* Improves loading experience */
+}
+
+@font-face {
+    font-family: 'AbrilFatface-Regular';
+    src: url('{{ '/assets/fonts/AbrilFatface-Regular.woff2' | relative_url }}') format('woff2'),
+         url('{{ '/assets/fonts/AbrilFatface-Regular.woff' | relative_url }}') format('woff');
+    font-weight: 700; /* Adjust according to your font file */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* If you have a separate font for headings (like Playfair Display was) */
+@font-face {
+    font-family: 'AbrilFatface-Regular'; /* Example: if you have another font for headings */
+    src: url('{{ '/assets/fonts/AbrilFatface-Regular.woff2' | relative_url }}') format('woff2'),
+         url('{{ '/assets/fonts/AbrilFatface-Regular.woff' | relative_url }}') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+/* Add more @font-face rules for different weights/styles if you have them */
+
 /* Basic Reset & Body */
 body {
     margin: 0;
-    font-family: 'Raleway', sans-serif; /* High-end sans-serif */
+    font-family: 'MyElegantFont', sans-serif; /* Use your custom font for body text */
     line-height: 1.6;
     color: #333;
     background-color: #f8f8f8; /* Light, clean background */
 }
 
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 /* Typography for High-End Feel */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif; /* Elegant serif for headings */
+    font-family: 'MyHeadingFont', serif; /* Or 'MyElegantFont' if you only have one custom font */
     color: #222;
     margin-top: 2em;
     margin-bottom: 0.5em;
@@ -50,7 +74,7 @@ a:hover {
 }
 
 .site-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'MyHeadingFont', serif;
     font-size: 1.8em;
     font-weight: 700;
     color: #333;
