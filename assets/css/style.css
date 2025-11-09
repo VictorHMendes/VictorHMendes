@@ -31,7 +31,7 @@
 /* Basic Reset & Body */
 body {
     margin: 0;
-    font-family: 'MyElegantFont', sans-serif; /* Use your custom font for body text */
+    font-family: 'AbrilFatface-Regular', sans-serif; /* Use your custom font for body text */
     line-height: 1.6;
     color: #333;
     background-color: #f8f8f8; /* Light, clean background */
@@ -39,7 +39,7 @@ body {
 
 /* Typography for High-End Feel */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'MyHeadingFont', serif; /* Or 'MyElegantFont' if you only have one custom font */
+    font-family: 'AbrilFatface-Regular', serif; /* Or 'MyElegantFont' if you only have one custom font */
     color: #222;
     margin-top: 2em;
     margin-bottom: 0.5em;
@@ -74,7 +74,7 @@ a:hover {
 }
 
 .site-title {
-    font-family: 'MyHeadingFont', serif;
+    font-family: 'AbrilFatface-Regular', serif;
     font-size: 1.8em;
     font-weight: 700;
     color: #333;
