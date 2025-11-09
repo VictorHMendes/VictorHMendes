@@ -1,0 +1,83 @@
+---
+layout: default
+title: Home
+---
+<div class="hero-section" style="background-image: url('{{ '/assets/images/hero_image.jpg' | relative_url }}');">
+    <div class="hero-content">
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+        <a href="{{ '/gallery/' | relative_url }}" class="button">View Gallery</a>
+    </div>
+</div>
+
+<div class="wrapper content-section">
+    <h2>My Vision: The Art of Imperfection</h2>
+    <p>In a world striving for flawless symmetry, my lens seeks out the profound beauty in the overlooked, the weathered, and the wonderfully out-of-place. I believe true authenticity resonates in the textures of decay, the quiet narratives of forgotten objects, and the unexpected harmony found in disarray. Each photograph is an invitation to pause, to look deeper, and to find grace in the imperfect.</p>
+    <p>Explore my collections to experience a unique perspective on the world around us.</p>
+</div>
+
+<style>
+    /* Hero section specific styles */
+    .hero-section {
+        background-size: cover;
+        background-position: center;
+        height: 60vh; /* Adjust as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        position: relative;
+    }
+    .hero-section::before { /* Overlay for text readability */
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.4); /* Darker overlay */
+    }
+    .hero-content {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+    }
+    .hero-content h1 {
+        font-size: 4em;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .hero-content p {
+        font-size: 1.4em;
+        margin-bottom: 30px;
+        color: #ddd;
+    }
+    .hero-content .button {
+        background-color: #fff;
+        color: #333;
+        padding: 12px 30px;
+        border-radius: 5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .hero-content .button:hover {
+        background-color: #eee;
+        color: #000;
+    }
+    .content-section {
+        text-align: center;
+        padding: 60px 20px;
+    }
+    .content-section h2 {
+        font-size: 2.5em;
+        margin-bottom: 0.8em;
+    }
+    .content-section p {
+        font-size: 1.1em;
+        max-width: 700px;
+        margin: 0 auto 20px auto;
+    }
+</style>
